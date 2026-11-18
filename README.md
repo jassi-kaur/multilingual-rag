@@ -1,4 +1,4 @@
-﻿# Multilingual RAG — One Space, Many Languages
+# Multilingual RAG — One Space, Many Languages
 
 A research-oriented multilingual Retrieval-Augmented Generation (RAG) system that enables users to ask questions in one language and retrieve relevant information from documents written in another.
 
@@ -99,7 +99,8 @@ Multilingual-RAG/
 ├── docs/
 │
 ├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
 
 ```
 
@@ -125,10 +126,15 @@ Multilingual-RAG/
 - [x] Git installation verified.
 - [x] VS Code development extensions verified.
 - [x] Initial `.gitignore` configured.
-- [ ] README and Git initialization.
-- [ ] Dependency compatibility verification.
-- [ ] Embedding model execution verification.
-- [ ] Local LLM generation verification.
+- [x] README and Git initialization (initial commit: `749504c`).
+- [x] Dependency compatibility verified (`pip check` and requirements dry-run).
+- [x] Multilingual E5 embedding model loaded and cross-lingual smoke test passed.
+- [x] Local Ollama LLM generation verified in English and Hindi.
+- [x] FAISS CPU installation and basic similarity-search index tested.
+- [x] Jupyter kernel registered and configured for the project environment.
+- [x] Pandas and Matplotlib imports and basic functionality verified.
+
+**Current status:** Development environment setup is verified. Application pipeline implementation has not started.
 
 ## 9. Research Scope
 
@@ -151,4 +157,3 @@ These extensions will be introduced progressively and supported by experimental 
 **One Space, Many Languages.**
 
 The objective is not simply to build another document chatbot. It is to understand, implement and evaluate how information retrieval and language generation can work across language boundaries.
-

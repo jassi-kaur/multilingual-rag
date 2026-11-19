@@ -1,10 +1,11 @@
+import pytest
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
 
 MODEL_NAME = "intfloat/multilingual-e5-small"
 
-
+@pytest.mark.slow
 def test_e5_model_smoke():
     model = SentenceTransformer(MODEL_NAME)
 

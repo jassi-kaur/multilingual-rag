@@ -10,3 +10,8 @@ requires-python = ">=3.12"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests that are slow to run (e.g. tests loading ML models)",
+]
